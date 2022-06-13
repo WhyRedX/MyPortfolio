@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 const skillsCard = [
   {
@@ -101,9 +102,9 @@ function rectangleBlock({ projectName, language, description, sourceLink }) {
         <em>{language}</em>
       </span>
       <p className="text-xsmall my-5">{description}</p>
-      <a href={sourceLink} className="text-xsmall underline">
-        source code
-      </a>
+      <Link href={sourceLink}>
+        <a className="text-xsmall underline">source code</a>
+      </Link>
     </div>
   );
 }
@@ -135,65 +136,87 @@ export default function Home() {
             </p>
             <ul className="text-xgrey hidden md:block">
               <li>
-                <a href="/#skills" className="inline-flex items-center group">
-                  <div className="hoverExpand xtransition"></div>
-                  <span className="text-sm md:text-xsmall group-hover:text-xdark">
-                    skills & tools
-                  </span>
-                </a>
+                <Link href="/#skills">
+                  <a className="inline-flex items-center group">
+                    <div className="hoverExpand xtransition"></div>
+                    <span className="text-sm md:text-xsmall group-hover:text-xdark">
+                      skills & tools
+                    </span>
+                  </a>
+                </Link>
               </li>
               <li className="my-6">
-                <a href="/#projects" className="inline-flex items-center group">
-                  <div className="hoverExpand xtransition"></div>
-                  <span className="text-sm md:text-xsmall group-hover:text-xdark">
-                    projects
-                  </span>
-                </a>
+                <Link href="/#projects">
+                  <a className="inline-flex items-center group">
+                    <div className="hoverExpand xtransition"></div>
+                    <span className="text-sm md:text-xsmall group-hover:text-xdark">
+                      projects
+                    </span>
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="inline-flex items-center group">
-                  <div className="hoverExpand xtransition"></div>
-                  <span className="text-sm md:text-xsmall group-hover:text-xdark">
-                    contact Me
-                  </span>
-                </a>
+                <Link href="#">
+                  <a className="inline-flex items-center group">
+                    <div className="hoverExpand xtransition"></div>
+                    <span className="text-sm md:text-xsmall group-hover:text-xdark">
+                      contact Me
+                    </span>
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="flex flex-wrap items-center">
             <div className="mb-5 mr-7">
-             <Image className="rounded-full" src="/images/author.jpg" width={50} height={50}/>
+              <Image
+                className="rounded-full"
+                src="/images/author.jpg"
+                width={50}
+                height={50}
+              />
             </div>
             <ul className="flex flex-wrap">
               <li className="mr-7 mb-4">
-                <a href="#" className="flex">
-                  <img
-                    src="https://img.icons8.com/ios-glyphs/90/undefined/github.png"
-                    alt=""
-                    width="21px"
-                  />
-                  <span className="text-sm md:text-xsmall ml-1">github</span>
-                </a>
+                <Link href="#">
+                  {" "}
+                  <a className="flex">
+                    <img
+                      src="https://img.icons8.com/ios-glyphs/90/undefined/github.png"
+                      alt=""
+                      width="21px"
+                    />
+                    <span className="text-sm md:text-xsmall ml-1">github</span>
+                  </a>
+                </Link>
               </li>
               <li className="mr-7 mb-4">
-                <a href="#" className="flex">
-                  <img
-                    src="https://img.icons8.com/ios-glyphs/90/undefined/linkedin-circled--v1.png"
-                    alt=""
-                    width="21px"
-                  />
-                  <span className="text-sm md:text-xsmall ml-1">linkedin</span>
-                </a>
+                <Link href="#">
+                  <a className="flex">
+                    <img
+                      src="https://img.icons8.com/ios-glyphs/90/undefined/linkedin-circled--v1.png"
+                      alt=""
+                      width="21px"
+                    />
+                    <span className="text-sm md:text-xsmall ml-1">
+                      linkedin
+                    </span>
+                  </a>
+                </Link>
               </li>
               <li className="mr-7 mb-4">
-                <a href="#" className="flex">
-                  <img
-                    src="https://img.icons8.com/ios-filled/90/undefined/telegram-app.png"
-                    alt=""
-                    width="18px"
-                  />
-                  <span className="text-sm md:text-xsmall ml-1">telegram</span>
-                </a>
+                <Link href="#">
+                  <a className="flex">
+                    <img
+                      src="https://img.icons8.com/ios-filled/90/undefined/telegram-app.png"
+                      alt=""
+                      width="18px"
+                    />
+                    <span className="text-sm md:text-xsmall ml-1">
+                      telegram
+                    </span>
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
