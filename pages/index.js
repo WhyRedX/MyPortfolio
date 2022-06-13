@@ -2,8 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import { squareBlock } from "./component/squareBlock";
-import { rectangleBlock } from "./component/rectangleBlock";
+import squareBlock from "./component/squareBlock";
+import rectangleBlock from "./component/rectangleBlock";
 
 import skillsCard from "../data/skillsCard";
 import projectsCard from "../data/projectsCard";
