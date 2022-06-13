@@ -88,7 +88,7 @@ function squareBlock({ skillLogo, skillName }) {
           className="block mx-auto mb-3"
         />
       </div>
-      <span className="text-center  md:text-lg">{skillName}</span>
+      <span className="text-center text-sm lg:text-lg">{skillName}</span>
     </div>
   );
 }
@@ -111,11 +111,11 @@ function rectangleBlock({ projectName, language, description, sourceLink }) {
 export default function Home() {
   return (
     <>
-      <main className="flex relative font-poppins max-w-[144rem]">
+      <main className="flex relative font-poppins max-w-[144rem] flex-col md:flex-row">
         {/* left part of home */}
-        <div className="py-10 md:fixed px-20 flex flex-col justify-between w-full md:h-screen md:max-w-[50%]">
+        <div className="p-5 lg:py-10 md:fixed lg:px-20 flex flex-col justify-between w-full md:h-screen md:max-w-[50%]">
           <div>
-            <h1 className="md:text-[6vw] font-bold break-words mb-5 leading-tight">
+            <h1 className="text-[3.5rem] md:text-[6vw] font-bold break-words mb-5 leading-tight">
               bhupendra thapa
             </h1>
             <p className="mb-12 break-words text-sm md:text-xsmall text-xgrey">
@@ -124,7 +124,7 @@ export default function Home() {
               development and utility-first CSS. I also share what I learn on my
               blog and in conferences around the world.
             </p>
-            <ul className="text-xgrey">
+            <ul className="text-xgrey hidden md:visible">
               <li>
                 <a href="/#skills" className="inline-flex items-center group">
                   <div className="hoverExpand"></div>
@@ -177,10 +177,10 @@ export default function Home() {
         </div>
 
         {/* right part of home */}
-        <div className="w-full md:max-w-[50%] py-10 pr-20 md:absolute md:top-0 md:right-0">
+        <div className="w-full md:max-w-[50%] p-5 lg:py-10 lg:pr-20 md:absolute md:top-0 md:right-0">
           <div id="skills" className="skills">
             <h1 className="md:hidden">skills</h1>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-4 md:grid-cols-3 gap-2">
               {skillsCard.map(squareBlock)}
             </div>
           </div>
