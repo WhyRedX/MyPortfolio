@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function rectangleBlock({ projectName, language, description, sourceLink }) {
+export default function rectangleBlock({ projectName, language, description, sourceLink }) {
     return (
       <div className="md:w-full md:h-auto p-7 shadow-md hover:scale-110 transition">
         <h1 className="font-bold text-2xl mb-1">{projectName}</h1>

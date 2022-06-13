@@ -1,4 +1,4 @@
-export function squareBlock({ skillLogo, skillName }) {
+export default function squareBlock({ skillLogo, skillName }) {
     return (
       <div className="group">
         <div className="md:w-full md:h-auto p-4 md:p-7 flex flex-col justify-between shadow-md hover:scale-110 transition group group-hover:bg-xdark">
