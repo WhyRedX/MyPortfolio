@@ -52,28 +52,28 @@ const projectsCard = [
     language: "html5, css3, javascript, reactjs, nodejs",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe rerum minus voluptate. Velit nulla nisi harum, rerum in ipsum?",
-    sourceLink: "",
+    sourceLink: "adasdasd",
   },
   {
     projectName: "calisthenxs",
     language: "html5, css3, javascript, reactjs, nodejs",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe rerum minus voluptate. Velit nulla nisi harum, rerum in ipsum?",
-    sourceLink: "",
+    sourceLink: "adasdasd",
   },
   {
     projectName: "calisthenxs",
     language: "html5, css3, javascript, reactjs, nodejs",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe rerum minus voluptate. Velit nulla nisi harum, rerum in ipsum?",
-    sourceLink: "",
+    sourceLink: "adasdasd",
   },
   {
     projectName: "calisthenxs",
     language: "html5, css3, javascript, reactjs, nodejs",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe rerum minus voluptate. Velit nulla nisi harum, rerum in ipsum?",
-    sourceLink: "",
+    sourceLink: "adasdasd",
   },
 ];
 
@@ -156,7 +156,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="#">
+                <Link href="/example">
                   <a className="inline-flex items-center group">
                     <div className="hoverExpand xtransition"></div>
                     <span className="text-sm md:text-xsmall group-hover:text-xdark">
@@ -178,8 +178,7 @@ export default function Home() {
             </div>
             <ul className="flex flex-wrap">
               <li className="mr-7 mb-4">
-                <Link href="#">
-                  {" "}
+                <Link href="/example">
                   <a className="flex">
                     <img
                       src="https://img.icons8.com/ios-glyphs/90/undefined/github.png"
@@ -191,7 +190,7 @@ export default function Home() {
                 </Link>
               </li>
               <li className="mr-7 mb-4">
-                <Link href="#">
+                <Link href="/example">
                   <a className="flex">
                     <img
                       src="https://img.icons8.com/ios-glyphs/90/undefined/linkedin-circled--v1.png"
@@ -205,7 +204,7 @@ export default function Home() {
                 </Link>
               </li>
               <li className="mr-7 mb-4">
-                <Link href="#">
+                <Link href="/example">
                   <a className="flex">
                     <img
                       src="https://img.icons8.com/ios-filled/90/undefined/telegram-app.png"
