@@ -181,7 +181,7 @@ export default function Home() {
               I specialize in frontend development and have experience working
               with React JS. I also working with Next JS.
             </p>
-            <ul className="text-xgrey hidden md:block">
+            <ul className="text-xgrey mb-12 md:mb-0">
               <li>
                 <Link href="/#skills">
                   <a className="inline-flex items-center group">
