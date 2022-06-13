@@ -78,7 +78,7 @@ const projectsCard = [
 
 function squareBlock({ skillLogo, skillName }) {
   return (
-    <div className="md:w-full md:h-auto p-4 md:p-7 flex flex-col justify-between shadow-md">
+    <div className="md:w-full md:h-auto p-4 md:p-7 flex flex-col justify-between shadow-md hover:scale-110 transition">
       <div>
         <img
           src={skillLogo}
@@ -95,7 +95,7 @@ function squareBlock({ skillLogo, skillName }) {
 
 function rectangleBlock({ projectName, language, description, sourceLink }) {
   return (
-    <div className="md:w-full md:h-auto p-7 shadow-md">
+    <div className="md:w-full md:h-auto p-7 shadow-md hover:scale-110 transition">
       <h1 className="font-bold text-2xl mb-1">{projectName}</h1>
       <span className="text-xsmall">
         <em>{language}</em>
@@ -122,7 +122,7 @@ export default function Home() {
 
       <main className="flex relative font-poppins flex-col md:flex-row">
         {/* left part of home */}
-        <div className="p-5 lg:py-10 md:fixed lg:px-20 flex flex-col justify-between w-full md:h-screen md:max-w-[50%]">
+        <div className="p-5 lg:py-14 lg:pb-5 md:fixed lg:px-20 flex flex-col justify-between w-full md:h-screen md:max-w-[50%]">
           <div>
             <h1 className="text-[12vw] md:text-[6vw] font-bold break-words mb-7 leading-tight">
               bhupendra thapa
@@ -136,7 +136,7 @@ export default function Home() {
             <ul className="text-xgrey hidden md:block">
               <li>
                 <a href="/#skills" className="inline-flex items-center group">
-                  <div className="hoverExpand"></div>
+                  <div className="hoverExpand xtransition"></div>
                   <span className="text-sm md:text-xsmall group-hover:text-xdark">
                     skills & tools
                   </span>
@@ -144,7 +144,7 @@ export default function Home() {
               </li>
               <li className="my-6">
                 <a href="/#projects" className="inline-flex items-center group">
-                  <div className="hoverExpand"></div>
+                  <div className="hoverExpand xtransition"></div>
                   <span className="text-sm md:text-xsmall group-hover:text-xdark">
                     projects
                   </span>
@@ -152,7 +152,7 @@ export default function Home() {
               </li>
               <li>
                 <a href="#" className="inline-flex items-center group">
-                  <div className="hoverExpand"></div>
+                  <div className="hoverExpand xtransition"></div>
                   <span className="text-sm md:text-xsmall group-hover:text-xdark">
                     contact Me
                   </span>
@@ -160,10 +160,9 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="flex flex-wrap">
-            <div className="mb-4 mr-7">
-              {/* <img src="" alt=""/> */}
-              ldsad
+          <div className="flex flex-wrap items-center">
+            <div className="mb-5 mr-7">
+             <Image className="rounded-full" src="/images/author.jpg" width={50} height={50}/>
             </div>
             <ul className="flex flex-wrap">
               <li className="mr-7 mb-4">
@@ -201,14 +200,14 @@ export default function Home() {
         </div>
 
         {/* right part of home */}
-        <div className="w-full md:max-w-[50%] p-5 lg:py-10 lg:pr-20 md:absolute md:top-0 md:right-0">
+        <div className="w-full md:max-w-[50%] p-5 lg:py-14 lg:pr-20 md:absolute md:top-0 md:right-0">
           <div id="skills" className="skills">
             <h1 className="md:hidden font-bold text-xl mb-4">skills</h1>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 gap-2">
               {skillsCard.map(squareBlock)}
             </div>
           </div>
-          <div id="projects" className="projects mt-20">
+          <div id="projects" className="projects mt-14">
             <h1 className="md:hidden font-bold text-xl mb-4">projects</h1>
             <div className="grid grid-cols-1 gap-2">
               {projectsCard.map(rectangleBlock)}

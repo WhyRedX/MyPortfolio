@@ -17,4 +17,8 @@ html{
 .hoverExpand{
     @apply w-4 h-[.095rem] bg-xgrey mr-3 group-hover:w-14 group-hover:bg-xdark
 }
+
+.xtransition{
+    transition: all 0.4s ease-in-out;
+}
 }
