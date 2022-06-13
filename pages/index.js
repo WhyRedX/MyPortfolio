@@ -224,7 +224,7 @@ export default function Home() {
                   </a>
                 </Link>
               </li>
-              <li className="my-6">
+              <li className="my-5">
                 <Link href="/#projects">
                   <a className="inline-flex items-center group">
                     <div className="hoverExpand xtransition"></div>
