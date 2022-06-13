@@ -73,6 +73,7 @@ export default function Home() {
                 src="/images/author.jpg"
                 width={50}
                 height={50}
+                alt="author"
               />
             </div>
             <ul className="flex flex-wrap">
