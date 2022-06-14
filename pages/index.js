@@ -257,7 +257,7 @@ export default function Home() {
             </div>
             <ul className="flex flex-wrap">
               <li className="mr-7 mb-4">
-                <Link href="/example">
+                <Link href="https://github.com/WhyRedX">
                   <a className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -274,7 +274,7 @@ export default function Home() {
                 </Link>
               </li>
               <li className="mr-7 mb-4">
-                <Link href="/example">
+                <Link href="https://www.linkedin.com/in/whyredx">
                   <a className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +293,7 @@ export default function Home() {
                 </Link>
               </li>
               <li className="mr-7 mb-4">
-                <Link href="/example">
+                <Link href="https://telegram.me/whyredx">
                   <a className="flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
