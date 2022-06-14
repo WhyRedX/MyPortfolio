@@ -235,7 +235,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/example">
+                <Link href="/#contact">
                   <a className="inline-flex items-center group">
                     <div className="hoverExpand xtransition"></div>
                     <span className="text-sm md:text-xsmall group-hover:text-xdark">
@@ -316,20 +316,37 @@ export default function Home() {
         </div>
 
         {/* right part of home */}
-        <div className="w-full md:max-w-[50%] p-5 lg:py-14 lg:pr-20 md:absolute md:top-0 md:right-0">
-          <div id="skills" className="skills">
+        <div className="w-full md:max-w-[50%] p-5 lg:pt-0 lg:pb-14 lg:pr-20 md:absolute md:top-0 md:right-0 md:z-50">
+          <div id="skills" className="skills lg:pt-14">
             <h1 className="md:hidden font-bold text-xl mb-4">skills</h1>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 gap-2">
               {skillsCard.map(squareBlock)}
             </div>
           </div>
-          <div id="projects" className="projects mt-14">
+          <div id="projects" className="projects py-[5rem]">
             <h1 className="md:hidden font-bold text-xl mb-4">projects</h1>
             <div className="grid grid-cols-1 gap-2">
               {projectsCard.map(rectangleBlock)}
             </div>
           </div>
-          <div className="p-7 mt-7">
+          <div id="contact" className="contact">
+            <h1 className="md:hidden font-bold text-xl mb-4">get in touch</h1>
+            <form>
+              <div>
+              <input className="w-full focus:outline-none text-sm bg-gray-100 p-3" type="text" placeholder="name" required/>
+              </div>
+              <div className="my-6">
+                <input className="w-full focus:outline-none text-sm bg-gray-100 p-3" type="email" placeholder="email" required/>
+              </div>
+              <div  className="mb-7">
+                <textarea className="w-full min-h-[10rem] focus:outline-none text-sm bg-gray-100 p-3" placeholder="message"></textarea>
+              </div>
+              <div>
+                <input className="bg-xdark text-sm text-xwhite py-3 px-5" type="submit" value="send message" />
+              </div>
+            </form>
+          </div>
+          <div className="mt-14 text-center md:text-start md:p-7">
             <p className="text-xsmall">
               design by <span className="text-xgrey">bhupendra thapa</span> |
               next.js
