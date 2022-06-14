@@ -169,7 +169,7 @@ function rectangleBlock({ projectName, language, description, sourceLink }) {
       <div className="md:w-full md:h-auto p-7 shadow-md hover:scale-110 group-hover:bg-xdark transition">
       <h1 className="font-bold text-2xl mb-1 group-hover:text-xwhite">{projectName}</h1>
       <span className="text-xsmall group-hover:text-xwhite">
-        <em>{language}</em>
+        [ <em>{language}</em> ]
       </span>
       <p className="text-xsmall my-5 group-hover:text-xwhite">{description}</p>
       <Link href={sourceLink}>
