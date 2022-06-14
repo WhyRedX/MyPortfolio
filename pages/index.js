@@ -209,9 +209,9 @@ export default function Home() {
               bhupendra thapa
             </h1>
             <p className="mb-12 break-words text-sm md:text-xsmall text-xgrey">
-              I am MERN stack developer, building websites and web applications.
-              I specialize in frontend development and have experience working
-              with React JS. I also working with Next JS.
+              I am a MERN stack developer with specialization in developing
+              frontend web applications. I have experience in React JS. Along
+              with that I am working on Next JS.
             </p>
             <ul className="text-xgrey mb-12 md:mb-0">
               <li>
