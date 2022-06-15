@@ -153,7 +153,7 @@ const projectsCard = [
 function squareBlock({ skillLogo, skillName }) {
   return (
     <div className="group">
-      <div className="md:w-full md:h-auto p-4 md:p-7 flex flex-col justify-between shadow-md hover:scale-110 transition group group-hover:bg-xdark">
+      <div className="md:w-full md:h-auto p-4 md:p-5 flex flex-col justify-between shadow-md hover:scale-110 transition group group-hover:bg-xdark">
         <div>{skillLogo}</div>
         <span className="text-center text-sm lg:text-lg group-hover:text-xwhite">
           {skillName}
@@ -166,7 +166,7 @@ function squareBlock({ skillLogo, skillName }) {
 function rectangleBlock({ projectName, language, description, sourceLink }) {
   return (
     <div className="group">
-      <div className="md:w-full md:h-auto p-7 shadow-md hover:scale-110 group-hover:bg-xdark transition">
+      <div className="md:w-full md:h-auto p-5 shadow-md hover:scale-110 group-hover:bg-xdark transition">
       <h1 className="font-bold text-2xl mb-1 group-hover:text-xwhite">{projectName}</h1>
       <span className="text-xsmall group-hover:text-xwhite">
         [ <em>{language}</em> ]
@@ -336,16 +336,16 @@ export default function Home() {
             <h1 className="md:hidden font-bold text-xl mb-4">get in touch</h1>
             <form>
               <div>
-              <input className="w-full focus:outline-none text-sm bg-gray-100 p-3" type="text" placeholder="name" required/>
+              <input className="w-full focus:outline-none text-sm bg-gray-100 py-3 px-4" type="text" placeholder="name" required/>
               </div>
               <div className="my-6">
-                <input className="w-full focus:outline-none text-sm bg-gray-100 p-3" type="email" placeholder="email" required/>
+                <input className="w-full focus:outline-none text-sm bg-gray-100 py-3 px-4" type="email" placeholder="email" required/>
               </div>
               <div  className="mb-7">
-                <textarea className="w-full min-h-[10rem] focus:outline-none text-sm bg-gray-100 p-3" placeholder="message"></textarea>
+                <textarea className="w-full min-h-[10rem] focus:outline-none text-sm bg-gray-100 py-3 px-4" placeholder="message"></textarea>
               </div>
               <div>
-                <input className="bg-xdark text-sm text-xwhite py-3 px-5" type="submit" value="send message" />
+                <input className="bg-xdark text-sm text-xwhite py-3 px-4" type="submit" value="send message" />
               </div>
             </form>
           </div>
