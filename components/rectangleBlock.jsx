@@ -19,22 +19,22 @@ export default function rectangleBlock({
         </p>
         <div className="flex items-center">
           <a
-            className="text-xsmall bg-black group-hover:bg-xwhite py-1.5 px-2 mr-2.5"
+            className="text-xsmall mr-2.5"
             href={sourceLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className=" text-xwhite group-hover:text-xdark">
+            <span className=" text-xdark group-hover:text-xwhite group-hover:underline">
               source code
             </span>
           </a>
           <a
-            className="text-xsmall bg-black group-hover:bg-xwhite py-1.5 px-2"
+            className="text-xsmall"
             href={demoLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-xwhite group-hover:text-xdark">
+            <span className="text-xdark group-hover:text-xwhite group-hover:underline">
               Live demo
             </span>
           </a>
