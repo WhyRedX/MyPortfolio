@@ -195,7 +195,7 @@ export default function Home() {
           {/*footer*/}
           <div className="mt-14 text-center md:text-start md:p-7">
             <p className="text-xsmall cursor-default">
-              design by <span className="text-xgrey">bhupendra thapa</span> |
+              designed and developed by <span className="text-xgrey">bhupendra thapa</span> |
               next.js
             </p>
           </div>
