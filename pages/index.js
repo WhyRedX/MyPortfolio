@@ -125,28 +125,16 @@ const projectsCard = [
     language: "html5, css3, javascript, reactjs, nodejs",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe rerum minus voluptate. Velit nulla nisi harum, rerum in ipsum?",
-    sourceLink: "adasdasd",
+    sourceLink: "https://github.com/WhyRedX/calisthenxs",
+    demoLink: "https://calisthenxs-production.up.railway.app",
   },
   {
     projectName: "book-kart",
     language: "html5, css3, javascript, reactjs, nodejs",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe rerum minus voluptate. Velit nulla nisi harum, rerum in ipsum?",
-    sourceLink: "adasdasd",
-  },
-  {
-    projectName: "dummy name",
-    language: "html5, css3, javascript, reactjs, nodejs",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe rerum minus voluptate. Velit nulla nisi harum, rerum in ipsum?",
-    sourceLink: "adasdasd",
-  },
-  {
-    projectName: "dummy name",
-    language: "html5, css3, javascript, reactjs, nodejs",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe rerum minus voluptate. Velit nulla nisi harum, rerum in ipsum?",
-    sourceLink: "adasdasd",
+    sourceLink: "https://github.com/WhyRedX/book-kart-app",
+    demoLink: "demo",
   },
 ];
 
@@ -163,30 +151,48 @@ function squareBlock({ skillLogo, skillName }) {
   );
 }
 
-function rectangleBlock({ projectName, language, description, sourceLink }) {
+function rectangleBlock({
+  projectName,
+  language,
+  description,
+  sourceLink,
+  demoLink,
+}) {
   return (
     <div className="group">
       <div className="md:w-full md:h-auto p-5 shadow-md hover:scale-110 group-hover:bg-xdark transition">
-      <h1 className="font-bold text-2xl mb-1 group-hover:text-xwhite">{projectName}</h1>
-      <span className="text-xsmall group-hover:text-xwhite">
-        [ <em>{language}</em> ]
-      </span>
-      <p className="text-xsmall my-5 group-hover:text-xwhite">{description}</p>
-      <Link href={sourceLink}>
-        <a className="text-xsmall flex items-center">
-          <span className="mr-2 group-hover:text-xwhite">source code</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 509 511.54"
-            width="12"
-            height="12"
-            className="group-hover:fill-xwhite"
+        <h1 className="font-bold text-2xl mb-1 group-hover:text-xwhite">
+          {projectName}
+        </h1>
+        <span className="text-xsmall group-hover:text-xwhite">
+          [ <em>{language}</em> ]
+        </span>
+        <p className="text-xsmall my-3.5 group-hover:text-xwhite">
+          {description}
+        </p>
+        <div className="flex items-center">
+          <a
+            className="text-xsmall bg-black group-hover:bg-xwhite py-1.5 px-2 mr-2.5"
+            href={sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <path d="M447.19 347.03c0-17.06 13.85-30.91 30.91-30.91 17.05 0 30.9 13.85 30.9 30.91v87.82c0 21.08-8.63 40.29-22.51 54.18-13.88 13.88-33.09 22.51-54.18 22.51H76.69c-21.09 0-40.3-8.63-54.18-22.51C8.63 475.14 0 455.93 0 434.85V76.69c0-21.09 8.63-40.3 22.51-54.18C36.39 8.63 55.6 0 76.69 0h86.98c17.06 0 30.9 13.85 30.9 30.9 0 17.06-13.84 30.91-30.9 30.91H76.69c-4.07 0-7.82 1.69-10.51 4.37-2.68 2.69-4.37 6.44-4.37 10.51v358.16c0 4.06 1.69 7.82 4.37 10.5 2.69 2.68 6.44 4.38 10.51 4.38h355.62c4.07 0 7.82-1.7 10.51-4.38 2.68-2.68 4.37-6.44 4.37-10.5v-87.82zm0-243.56L308.15 244.28c-11.91 12.12-31.45 12.28-43.56.37-12.11-11.91-12.28-31.45-.37-43.56L401.77 61.81H309.7c-17.06 0-30.9-13.85-30.9-30.91 0-17.05 13.84-30.9 30.9-30.9h168.4C495.15 0 509 13.85 509 30.9v165.04c0 17.06-13.85 30.9-30.9 30.9-17.06 0-30.91-13.84-30.91-30.9v-92.47z"></path>
-          </svg>
-        </a>
-      </Link>
-    </div>
+            <span className=" text-xwhite group-hover:text-xdark">
+              source code
+            </span>
+          </a>
+          <a
+            className="text-xsmall bg-black group-hover:bg-xwhite py-1.5 px-2"
+            href={demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-xwhite group-hover:text-xdark">
+              Live demo
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
@@ -208,9 +214,11 @@ export default function Home() {
         {/* left part of home */}
         <div className="p-5 lg:py-14 lg:pb-5 md:fixed lg:px-20 flex flex-col justify-between w-full md:h-screen md:max-w-[50%]">
           <div>
-            <h1 className="text-[12vw] md:text-[6vw] font-bold break-words mb-7 leading-tight">
+            <Link href="/">
+            <h1 className="text-[12vw] md:text-[6vw] font-bold break-words mb-7 leading-tight cursor-pointer">
               bhupendra thapa
             </h1>
+            </Link>
             <p className="mb-12 break-words text-sm md:text-xsmall text-xgrey">
               I am a MERN stack developer with specialization in developing
               frontend web applications. I have experience in React JS. Along
@@ -260,8 +268,7 @@ export default function Home() {
             </div>
             <ul className="flex flex-wrap">
               <li className="mr-7 mb-4">
-                <Link href="https://github.com/WhyRedX">
-                  <a className="flex">
+                  <a className="flex" href="https://github.com/WhyRedX">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -274,11 +281,9 @@ export default function Home() {
                     </svg>
                     <span className="text-sm md:text-xsmall ml-1">github</span>
                   </a>
-                </Link>
               </li>
               <li className="mr-7 mb-4">
-                <Link href="https://www.linkedin.com/in/whyredx">
-                  <a className="flex">
+                  <a className="flex" href="https://www.linkedin.com/in/whyredx">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -293,11 +298,9 @@ export default function Home() {
                       linkedin
                     </span>
                   </a>
-                </Link>
               </li>
               <li className="mr-7 mb-4">
-                <Link href="https://telegram.me/whyredx">
-                  <a className="flex">
+                  <a className="flex" href="https://telegram.me/whyredx">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       x="0px"
@@ -312,7 +315,6 @@ export default function Home() {
                       telegram
                     </span>
                   </a>
-                </Link>
               </li>
             </ul>
           </div>
@@ -336,21 +338,38 @@ export default function Home() {
             <h1 className="md:hidden font-bold text-xl mb-4">get in touch</h1>
             <form>
               <div>
-              <input className="w-full focus:outline-none text-sm bg-gray-100 py-3 px-4" type="text" placeholder="name" required/>
+                <input
+                  className="w-full focus:outline-none text-sm bg-gray-100 py-3 px-4"
+                  type="text"
+                  placeholder="name"
+                  required
+                />
               </div>
               <div className="my-6">
-                <input className="w-full focus:outline-none text-sm bg-gray-100 py-3 px-4" type="email" placeholder="email" required/>
+                <input
+                  className="w-full focus:outline-none text-sm bg-gray-100 py-3 px-4"
+                  type="email"
+                  placeholder="email"
+                  required
+                />
               </div>
-              <div  className="mb-7">
-                <textarea className="w-full min-h-[10rem] focus:outline-none text-sm bg-gray-100 py-3 px-4" placeholder="message"></textarea>
+              <div className="mb-7">
+                <textarea
+                  className="w-full min-h-[10rem] focus:outline-none text-sm bg-gray-100 py-3 px-4"
+                  placeholder="message"
+                ></textarea>
               </div>
               <div>
-                <input className="bg-xdark text-sm text-xwhite py-3 px-4" type="submit" value="send message" />
+                <input
+                  className="bg-xdark text-sm text-xwhite py-3 px-4"
+                  type="submit"
+                  value="send message"
+                />
               </div>
             </form>
           </div>
           <div className="mt-14 text-center md:text-start md:p-7">
-            <p className="text-xsmall">
+            <p className="text-xsmall cursor-default">
               design by <span className="text-xgrey">bhupendra thapa</span> |
               next.js
             </p>
