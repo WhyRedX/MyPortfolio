@@ -75,7 +75,7 @@ export default function Home() {
             <div className="mb-5 mr-7">
               <Image
                 className="rounded-full"
-                src="/images/author.jpg"
+                src="/images/author1.jpg"
                 width={50}
                 height={50}
               />
